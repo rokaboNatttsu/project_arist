@@ -20,10 +20,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-y34xhbf(iuhu3!pd%)2^yefa!o1=ocn+!3je1wz=^0elh65=_7'
+SECRET_KEY = 'django-insecure-y34xhbf(iuhu3!pd%)2^yefa!o1=ocn+!3je1wz=^0elh65=_7'   #   本番環境では、ここも変更する必要がある
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = True    #   本番環境では絶対Falseにする
 
 ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 
