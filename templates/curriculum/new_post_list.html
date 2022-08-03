@@ -8,9 +8,8 @@
 </head>
 <body>
     {% for post in posts %}
-        <h2><a href="{% url 'new_post_list' %}">{{ post.title }}</a></h2>
-        <p>筆者:{{ post.author }}, 公開日:{{ post.published_date }}, 更新日:{{ post.created_date }}</p>
-        <!--<p>{{ post.text|linebreaksbr }}</p>-->
+        <h2><a href="{% url 'one_post' post.id %}">{{ post.title }}</a></h2>
+        <p>筆者:{{ post.author }}, 公開日:{{ post.published }}, 更新日:{{ post.edited }}</p>
         <p>---------------------------------------------------------</p>
     {% endfor %}
 </body>
