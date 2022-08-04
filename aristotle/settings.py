@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    "curriculum.apps.CurriculumConfig"
+    "curriculum.apps.CurriculumConfig",
+    "welcome.apps.WelcomeConfig",
 ]
 
 MIDDLEWARE = [

@@ -12,5 +12,6 @@
         <p>筆者:{{ post.author }}, 公開日:{{ post.published }}, 更新日:{{ post.edited }}</p>
         <p>---------------------------------------------------------</p>
     {% endfor %}
+    <a href="{% url 'admin:index' %}">管理者ページ</a>
 </body>
 </html>

@@ -1,7 +1,6 @@
 from django.shortcuts import render
 from .models import Post
 from django.utils import timezone
-from django.views.generic import DetailView, ListView
 
 # Create your views here.
 def new_post_list(request):

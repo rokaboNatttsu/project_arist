@@ -7,8 +7,11 @@
     <title>{{ post.title }}</title>
 </head>
 <body>
+    <a href="{% url 'new_post_list' %}">新着カリキュラム一覧</a>
     <h2>{{ post.title }}</h2>
     <p>{{ post.text }}</p>
     <p>筆者:{{ post.author }}, 公開日:{{ post.published }}, 更新日:{{ post.edited }}</p>
+    <br>
+    <a href="{% url 'admin:index' %}">管理者ページ</a>
 </body>
 </html>
