@@ -18,3 +18,10 @@ def one_post(request, pk):
             break
     return render(request, 'curriculum/post.html', {"post":post})
 
+
+def tagsearch(request):
+    posts = Post.objects.filter(published__lte=timezone.now()).order_by('-published')
+    tags = set()
+    for post in posts:
+        tags.add(post.tag)
+    return render(request, "curriculum/tagsearch.html", {"posts":posts, "tags":tags})

@@ -11,3 +11,13 @@ https://tutorial.djangogirls.org/ja/deploy/
 https://docs.djangoproject.com/ja/4.0/howto/deployment/checklist/
 
 をよく読んで。
+
+個人ページの追加
+
+ログイン機能の追加
+
+投稿フォームの追加
+
+投票システムの追加
+
+タグ検索の追加
